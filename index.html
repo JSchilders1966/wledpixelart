@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WLED Pixel Designer</title>
+        <link rel="icon" type="image/x-icon" href="icon/program.png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+        <script src="install.js" defer></script>
+        <link rel="manifest" href="manifest.webmanifest">
+
+        <script src="jquery.min.js"></script>
+        <script src="html2canvas.min.js"></script>
+        
+        <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        
+
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div class="container-fluid text-center">    
+        <h3 class="bg-info fixed-top">WLED 2D Pixel Art Designer</h3>
+
+        <div class="container appbox">
+            <div class="row">
+                <div class="col-md-auto">
+                   <div class="colorbox" style="background-color: white;"></div> 
+                   <div class="colorbox" style="background-color: blue;"></div> 
+                   <div class="colorbox" style="background-color: green;"></div>
+                   <div class="colorbox" style="background-color: red;"></div>
+                   <div class="colorbox" style="background-color: purple;"></div>
+                   <div class="colorbox" style="background-color:chocolate;"></div>
+                   <div class="colorbox" style="background-color:deeppink"></div>
+                   <div class="colorbox" style="background-color:steelblue;"></div>
+                   <div class="colorbox" style="background-color:chartreuse;"></div>
+                   <div class="colorbox" style="background-color:darkolivegreen"></div>
+                   <div class="colorbox" style="background-color:yellow"></div>
+                   <div class="colorbox" style="background-color:brown"></div>
+                   <div class="colorbox" style="background-color:crimson"></div>
+                   <div class="colorbox" style="background-color:darkorange"></div>
+                   <input id="setColor"  style="width:34px;" type="color" value="#ff0000" />
+                    
+                </div>
+                <div class="col-4">
+                    
+                </div>
+
+            </div>      
+
+            <div class="row">
+              <div class="col-md-auto">
+                
+                 <div id="matrix" class="align-items-center justify-content-center"></div>
+               </div>
+               <div class="col-7 text-left">
+
+                <div>
+                    <b>WLED controller local ip-adres:</b>
+                    <div class="input-group mb-2 w-25">
+                      <input type="text" id="ipadres"class="form-control" style="width:230px;" placeholder="192.168.0.53" aria-label="192.168.0.53" aria-describedby="basic-addon1">
+                      
+ 
+                    </div>  
+                    <div class="d-flex justify-content-left">
+                      <button id="readMatrix" class="btn btn-success">Send</button>
+                    </div>
+                </div>
+                 
+
+             <!--
+                <div style="margin-top:5px;">
+                    <textarea id="loadData"></textarea><br/><br/>
+                    <button id="loadMatrix" class="btn btn-success">Load</button>
+                </div>
+              --> 
+                <div class="text-left" style="margin-top:10px;">
+                  To get it to work in Google Chrome:
+                  <ul>
+                    <li>go to chrome://flags/#block-insecure-private-network-requests</li>
+                    <li>set Block insecure private network requests to <b>Disabled</b></li>
+                    <li>Restart Chrome and besure you are in the same ip range</li>
+                  </ul>
+                </div>
+              
+                <div style="margin-top:5px;"> 
+                  
+                  <!--<button id="playMatrix" class="btn btn-success">Play</button>-->
+                  <button id="saveMatrix" class="btn btn-success">Save</button>
+                </div>
+
+
+              </div> 
+
+            </div>
+
+ 
+        
+
+        </div>
+
+        <div id="saved">
+                    
+        </div>
+
+        <footer class="bg-info text-center text-lg-start fixed-bottom">
+         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright: <a class="text-dark" href="https://schilders.com/">schilders.com</a>
+         </div>
+         <button class="add-button">Add to home screen</button>
+        </footer>     
+      <script src="script.js" async defer></script>
+    </body>
+</html>

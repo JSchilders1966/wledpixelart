@@ -1,0 +1,15 @@
+{
+    "background_color": "purple",
+    "description": "Design pixel art for your WLED 2D led matrix.",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "icon/program.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "name": "WLED 2D Pixel art designer",
+    "short_name": "WLED designer",
+    "start_url": "index.html"
+  }

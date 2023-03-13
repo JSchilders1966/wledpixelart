@@ -1,0 +1,60 @@
+body {
+   margin:0px;
+   padding:0px;
+   background-color:beige; 
+
+}
+
+.thumbnails{
+   width:60px; 
+   height:60px; 
+   border: 1px solid black;
+   margin-right:4px;
+}
+.thumbnails:hover{
+  cursor: pointer;
+}    
+
+.appbox {
+    margin-top: 40px;
+}
+#matrix {
+   
+    display:inline-block;
+    padding:2px;
+    border: 2px solid gray;
+   
+}
+.colorbox {
+    border-radius: 3px;
+    float:left;  
+    width:24px;
+    height: 24px;
+    border: 1px solid rgb(0, 0, 0);  
+    margin-right: 2px;
+}
+.led {
+  float:left;  
+  width:24px;
+  height: 24px;
+  border-right: 1px solid rgb(172, 172, 172);
+  border-bottom: 1px solid rgb(172, 172, 172);;
+  background-color: rgb(0, 0, 0);
+}
+
+.led:hover {
+    display: block;
+    background-color: rgb(170, 170, 170) !important ; 
+}
+
+.nowrap {
+    clear:left;
+}
+
+.mycolor{
+    border: 1px solid black;
+    width:120px;
+    height:20px;
+    margin-bottom:10px;
+
+}
