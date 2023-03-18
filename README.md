@@ -17,3 +17,5 @@ With the send button a API call wil send to the internal ip-adres of the control
 [WLED Install ](https://kno.wled.ge/basics/install-binary/)
 
 [WLED JSON API ](https://kno.wled.ge/interfaces/json-api/)
+
+https://github.com/werkstrom/WLED-PixelArtConverter
