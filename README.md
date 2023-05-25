@@ -14,6 +14,7 @@ With the send button a API call wil send to the internal ip-adres of the control
 * Restart Chrome and besure you are in the same ip range
 
 ## Links
+[Working example ].(http://wled.schilders.com)
 [WLED Install ](https://kno.wled.ge/basics/install-binary/)
 
 [WLED JSON API ](https://kno.wled.ge/interfaces/json-api/)
